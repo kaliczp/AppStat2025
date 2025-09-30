@@ -19,3 +19,7 @@ citation()
 ##  Check it!
 ## 8. Quit R with q()
 ## 9. Look at the folder!
+
+## Download FirstScript.R put into your folder
+## Test it with dir() function.
+dir()
