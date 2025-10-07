@@ -13,3 +13,8 @@ my_con <- c(a, b)
 ## Manual pages, every funciton and system part has a manual page
 ?c # man. page for c() function
 ?ls # man. pag for ls()
+c(1, 7:9) # from the Example of ?c
+?":" # Man. page of :
+1:100 # Explore the element number in the firs pos [1]
+my_vector <- c(a, 3:15, b)
+str(my_vector) # structure gives a short description see ?str
