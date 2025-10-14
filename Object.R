@@ -26,3 +26,10 @@ my_vector[1] # First element of my_vector
 my_vector[10] # 10th element of my_vector
 summv[1] # the summary result is a vector indexable
 summv[6] # 6th element
+
+### Basic types
+## Until now we used numeric type
+1:10 # sequence form 1 to 10
+-3:300 # sequence rom -3 until 300
+seq(-3, 300, 3) # sequence as above but increased by 3
+
