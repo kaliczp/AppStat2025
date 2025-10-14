@@ -32,4 +32,19 @@ summv[6] # 6th element
 1:10 # sequence form 1 to 10
 -3:300 # sequence rom -3 until 300
 seq(-3, 300, 3) # sequence as above but increased by 3
-
+## help of a function
+?seq
+help(seq)
+seq() # there are default values for arguments
+NULL # Nothing mainly in programming
+NA # nothin or Not Available in data
+NaN # not a number, result of calulatin
+Inf # result of 1/0
+## Logical types
+TRUE
+FALSE # These are result of an expression
+a > 0
+a > 100
+ls() # before you contiune your work let's check existing objects
+## Character type
+month.name # part of the system, there are many object in R
