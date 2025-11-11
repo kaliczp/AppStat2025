@@ -1,3 +1,4 @@
+## We use a dataset from odp page, from climate/homogenized_data/station_data_series/from_1870/precipitation_sum/
 dir() # Control your dataset is available
 help.start() # There is an import/export manual
 read.table("r_h_Budapest_18702023.csv") # Drops an error
