@@ -7,7 +7,11 @@ set.seed(10) # set the initial state of random number genration
 
 hist(my_norm) # Histogram
 boxplot(my_norm) # Boxplot
+IQR(my_norm) # Inter Quartile Range
 summary(my_norm) # Summary Tkey five numbers + mean
+
+## Lets look some examples in one row separated with semicolons
+ my_norm <- rnorm(100);boxplot(my_norm);summary(my_norm)
 
 my_ext <- c(my_norm,100)
 summary(my_ext)
