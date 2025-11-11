@@ -14,3 +14,5 @@ BpRainyDays <- BpRain[BpRain$r > 0, "r"]
 boxplot(BpRainyDays)
 
 ## Histogram and density
+hist(BpRainyDays)
+barplot(BpRainyDays)
