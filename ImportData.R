@@ -18,6 +18,7 @@ hist(BpRainyDays)
 barplot(BpRainyDays)
 
 ## Barplot for the first year weekly changing color
-barplot(BpRainyDays[1:365], col = c(rep("#e0ecf4",7),rep("#8856a7",7)), xaxs = "i")
+barplot(BpRain[1:365, "r"], col = c(rep("#e0ecf4",7),rep("#8856a7",7)), xaxs = "i")
 
 ## Linear regression
+
