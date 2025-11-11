@@ -7,6 +7,10 @@ set.seed(10) # set the initial state of random number genration
 
 hist(my_norm) # Histogram
 boxplot(my_norm) # Boxplot
+## play with figure colors
+boxplot(my_norm, col = NULL) # no color
+boxplot(my_norm, col = "pink") # no color
+boxplot(my_norm, col = "#fc8d59") # from https://colorbrewer2.org/
 IQR(my_norm) # Inter Quartile Range
 summary(my_norm) # Summary Tkey five numbers + mean
 
