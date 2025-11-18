@@ -25,4 +25,15 @@ barplot(BpRainyDays)
 barplot(BpRain[1:365, "r"], col = c(rep("#e0ecf4",7),rep("#8856a7",7)), xaxs = "i") # graph parameters from ?par
 
 ## Linear regression
+head(BpRain)
+BpRain$Index <- 1:nrow(BpRain)
+BpRain.lm <- lm(r ~ Index, BpRain)
+BpRain.lm
+str(BpRain.lm)
+summary(BpRain.lm)
+## Significant, but not meaningful!
+BpRain.lm$coefficients[2]*36500
 
+## Visualise
+plot(r ~ Index, BpRain, type = "h", xaxs = "i")
+abline(BpRain.lm, col = "red")
