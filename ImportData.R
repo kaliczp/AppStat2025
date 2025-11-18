@@ -12,6 +12,9 @@ boxplot(BpRain$r)
 
 ## Index the values greater than zero
 BpRainyDays <- BpRain[BpRain$r > 0, "r"]
+quantile(BpRainyDays)
+median(BpRainyDays)
+mean(BpRainyDays)
 boxplot(BpRainyDays)
 
 ## Histogram and density
