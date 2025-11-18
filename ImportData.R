@@ -21,8 +21,8 @@ boxplot(BpRainyDays)
 hist(BpRainyDays)
 barplot(BpRainyDays)
 
-## Barplot for the first year weekly changing color
-barplot(BpRain[1:365, "r"], col = c(rep("#e0ecf4",7),rep("#8856a7",7)), xaxs = "i")
+## Barplot for the first year weekly changing color (auto repeating)
+barplot(BpRain[1:365, "r"], col = c(rep("#e0ecf4",7),rep("#8856a7",7)), xaxs = "i") # graph parameters from ?par
 
 ## Linear regression
 
