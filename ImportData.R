@@ -7,6 +7,7 @@ str(BpRain)
 BpRain <- read.table("r_h_Budapest_18702023.csv", sep = ";", header = TRUE) # with separator declare
 
 summary(BpRain$r)
+quantile(BpRain$r)
 boxplot(BpRain$r)
 
 ## Index the values greater than zero
