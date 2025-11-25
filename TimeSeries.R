@@ -35,3 +35,10 @@ library(xts) # load package
 ## Create real date based on firt colum
 BpDatum <- as.Date(as.character(BpTemp[,1]), format = "%Y%m%d")
 head(BpDatum) # check the conversion
+
+## create xts object
+BpTemp.xts <- xts(BpTemp$ta, BpDatum)
+BpTemp.xts
+plot(BpTemp.xts)
+plot(BpTemp.xts['1973'])
+plot(BpTemp.xts['1973-02'])
