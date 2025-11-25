@@ -10,3 +10,9 @@ summary(BpRain.lm) # main statistics about regression
 ## Visualise
 plot(r ~ Index, BpRain, type = "h", xaxs = "i")
 abline(BpRain.lm, col = "red")
+
+## Visual diagnostic of regression
+plot(BpRain.lm)
+
+## Import temperature from the same source as precipitation
+BpTemp <- read.table("ta_h_Budapest_18702023.csv", sep = ";", header = TRUE)
