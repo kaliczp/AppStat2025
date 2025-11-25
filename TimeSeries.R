@@ -16,3 +16,7 @@ plot(BpRain.lm)
 
 ## Import temperature from the same source as precipitation
 BpTemp <- read.table("ta_h_Budapest_18702023.csv", sep = ";", header = TRUE)
+## Regression as above
+BpTemp$Index <- 1:nrow(BpTemp)
+BpTemp.lm <- lm(ta ~ Index, BpTemp)
+summary(BpTemp.lm)
