@@ -20,3 +20,13 @@ BpTemp <- read.table("ta_h_Budapest_18702023.csv", sep = ";", header = TRUE)
 BpTemp$Index <- 1:nrow(BpTemp)
 BpTemp.lm <- lm(ta ~ Index, BpTemp)
 summary(BpTemp.lm)
+
+## Plot as before
+plot(ta ~ Index, BpTemp, type ="l", xaxs = "i")
+abline(BpTemp.lm, col = "red")
+
+## Check increase
+BpTemp.lm$coefficients[2]*36500
+
+## Install xts package
+install.packages("xts")
