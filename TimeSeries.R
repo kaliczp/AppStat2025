@@ -30,3 +30,8 @@ BpTemp.lm$coefficients[2]*36500
 
 ## Install xts package
 install.packages("xts")
+library(xts) # load package
+
+## Create real date based on firt colum
+BpDatum <- as.Date(as.character(BpTemp[,1]), format = "%Y%m%d")
+head(BpDatum) # check the conversion
